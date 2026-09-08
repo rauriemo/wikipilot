@@ -2450,3 +2450,7 @@ Austin Wintory GDC Side Quest interview: collaborative composing process and Dev
 ## [2026-09-06] daily | 5 topics, 5 sources, 12 pages
 
 Daily research complete. PRs #694–#698. Topics: agentic-coding (1 src), frontier-models (3 src), ai-in-game-dev (0 src), games-of-note (0 src), game-music (1 src).
+
+## [2026-09-08] manual | conflict-resolver — 0 rebased, 1 requeued, 0 lint-fixed, 0 failed
+
+pr#705 kind=requeue resolved=true — auto-merge re-enabled via MCP (gh CLI auth unavailable); pr#705 (ai-in-game-dev daily 2026-09-08) was CLEAN with CI green but had no autoMergeRequest set.
