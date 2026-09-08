@@ -24,7 +24,8 @@ sources:
   - "[[claude-code-v2-1-259-managed-mcp-servers-and-headless-unattended-permissions-0e371a11]]"
   - "[[claude-code-2-1-260-a-diff-panel-in-fullscreen-cache-diagnostics-and-an-expensive-fable-5-1-bug-fixed-78ec55e7]]"
   - "[[claude-code-2-1-261-skill-doctor-agent-team-prompt-cache-fix-and-larger-inline-tool-output-caps-7c76a455]]"
-last_updated: 2026-09-06
+  - "[[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]]"
+last_updated: 2026-09-08
 last_verified: 2026-09-04
 freshness_window_days: 30
 ---
@@ -110,6 +111,10 @@ Cursor's June 2026 `/in-cloud` update pushes the isolation boundary from worktre
 **Claude Code v2.1.261 fixes an in-process agent-team cache-prefix regression (September 2026).** The release addresses a parallel-subagent prompt-caching bug specific to the in-process agent-team path: teammates were re-sending their opening tool and skill announcements on the second turn, silently changing the request prefix and missing the shared prompt cache [[claude-code-2-1-261-skill-doctor-agent-team-prompt-cache-fix-and-larger-inline-tool-output-caps-7c76a455]]. This is load-bearing for agent-team economics: when parallel teammates share a cacheable prefix for the first turn but then break that prefix on turn two by re-announcing, the shared-cache savings collapse, making in-process agent teams materially more expensive than the fork-based parallelism this page tracks. The fix restores the expected cache-reuse behavior for the agent-team orchestration pattern.
 
 > Fixed in-process agent-team teammates re-sending their first-turn tool and skill announcements on the second turn, which changed the request prefix and missed the prompt cache. [[claude-code-2-1-261-skill-doctor-agent-team-prompt-cache-fix-and-larger-inline-tool-output-caps-7c76a455]]
+
+**Claude Code v2.1.263 fixes background-subagent message routing to unnamed agents (September 2026).** Prior to this build, background subagents could not reply to messages from *unnamed* sibling or parent agents, causing a silent inter-agent communication drop in fan-out teams [[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]]. This is a reliability failure mode specific to the background-subagent default posture that parallel-subagent orchestration has converged on: when an unnamed agent spawns background siblings and attempts peer-to-peer coordination via the `SendMessage` / `ListAgents` cross-session messaging surface, the message is silently dropped if the sibling is also in background mode, breaking the fan-out team's coordination layer. The fix restores the expected message-routing behavior, making background-subagent teams viable for orchestration patterns that depend on peer messaging rather than strictly hierarchical parent-child dispatch.
+
+> Fixed background subagents being unable to reply to messages from unnamed sibling or parent agents. [[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]]
 
 ## Disputes
 

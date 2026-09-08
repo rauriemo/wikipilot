@@ -294,7 +294,10 @@ sources:
   - "[[claude-code-2-1-260-a-diff-panel-in-fullscreen-cache-diagnostics-and-an-expensive-fable-5-1-bug-fixed-78ec55e7]]"
   - "[[harness-engineering-anatomy-architecture-and-evolution-of-coding-agents-a-source-code-study-of-eleven-systems-dbb73861]]"
   - "[[claude-code-2-1-261-skill-doctor-agent-team-prompt-cache-fix-and-larger-inline-tool-output-caps-7c76a455]]"
-last_updated: 2026-09-06
+  - "[[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]]"
+  - "[[swe-gate-passing-functional-tests-is-not-enough-for-software-engineering-agents-64021298]]"
+  - "[[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]]"
+last_updated: 2026-09-08
 last_verified: 2026-09-04
 freshness_window_days: 30
 ---
@@ -401,6 +404,22 @@ The agentic-coding category reached visible convergence in mid-2026 even as the 
 > For frontier coding agents operating at or near the capability boundary, verification is strictly harder than generation. No single reward signal is both reliable and scalable across the full difficulty range of modern agentic coding benchmarks. [[the-verification-horizon-no-silver-bullet-for-coding-agent-rewards-a2a59515]]
 
 ## Recent updates
+
+### Updates 2026-09-08
+
+**Claude Code v2.1.263 (2026-09-06) is a small reliability release whose load-bearing item for parallel-subagent orchestration is a fix to background-subagent message routing.** Prior to this build, background subagents could not reply to messages from *unnamed* sibling or parent agents — "Fixed background subagents being unable to reply to messages from unnamed sibling or parent agents" [[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]] — a silent inter-agent-communication drop in fan-out teams. The release also closes an auto-mode governance gap: an org policy flipping `disableAutoMode` mid-session previously left an already-running auto-mode session in auto mode; now — "Fixed managed-settings disableAutoMode arriving mid-session not moving an already-running auto-mode session back to default mode" [[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]]. This is incremental relative to the 2.1.259–2.1.261 cost/security items already logged; it does not move the current-state picture.
+
+> Fixed background subagents being unable to reply to messages from unnamed sibling or parent agents.
+
+> Fixed managed-settings disableAutoMode arriving mid-session not moving an already-running auto-mode session back to default mode.
+
+**SWE-Gate (arXiv 2609.04167, 2026-09-03) adds a review-constraint-compliance axis to repository-level agent evaluation and quantifies how much functional-test-only scoring overestimates real acceptance.** The benchmark "explicitly evaluates review constraint compliance alongside functional correctness" across "303 repository-level repair instances spanning 75 open-source Python repositories" [[swe-gate-passing-functional-tests-is-not-enough-for-software-engineering-agents-64021298]], deriving its constraints from real PR review comments. The headline result sharpens the wiki's existing overestimation thread: "Among 644 repairs that pass the functional tests, 221 fail to satisfy the provided review constraints" [[swe-gate-passing-functional-tests-is-not-enough-for-software-engineering-agents-64021298]] — a ~34% functional-pass-but-not-acceptable rate.
+
+> SWE-Gate is a repository-level benchmark for software engineering agents that explicitly evaluates review constraint compliance alongside functional correctness. Among 644 repairs that pass the functional tests, 221 fail to satisfy the provided review constraints.
+
+**Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation (arXiv 2609.01603, early Sep 2026) targets the cost side of eval harnesses: cheaper full-benchmark score/ranking estimation from small calibration subsets.** Its PTA-IRT method is "a Privileged Trajectory-Aware Item Response Theory framework that fuses process and outcome signals, using historical execution trajectories to supply process-level evidence beyond pass/fail" [[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]], and it reports that "under low calibration budgets, PTA-IRT consistently outperforms prior IRT baselines on score and ranking recovery across four SWE benchmarks" [[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]].
+
+> We propose PTA-IRT, a Privileged Trajectory-Aware Item Response Theory framework that fuses process and outcome signals, using historical execution trajectories to supply process-level evidence beyond pass/fail. Under low calibration budgets, PTA-IRT consistently outperforms prior IRT baselines on score and ranking recovery across four SWE benchmarks.
 
 ### Updates 2026-09-06
 
@@ -2524,6 +2543,9 @@ lint stays quiet until each page actually exists:
 - [ ] How does the eleven-production-harness anatomy [[harness-engineering-anatomy-architecture-and-evolution-of-coding-agents-a-source-code-study-of-eleven-systems-dbb73861]] reconcile with the 13-scaffold loop-primitive taxonomy [[inside-the-scaffold-a-source-code-taxonomy-of-coding-agent-architectures-7e37a967]] — do the two corpora agree on the dominant harness architecture, and what does Omnigent's 'meta-harness' category add?
 - [ ] Does `/skill-doctor`'s unused-skill/context-cost accounting give teams a measurable lever against Context-Bloat / Skill-Leakage smells, and does pruning unused skills actually improve pass rates?
 - [ ] Raising the inline tool-output ceiling to 128K via `bashOutputMaxChars`/`taskOutputMaxChars` admits more raw output into context — the opposite direction from adaptive stale-tool-result truncation that was found to lift pass rates at no extra cost. Is there a measured pass-rate/cost crossover where a higher inline cap helps rather than hurts?
+- [ ] Does the ~34% functional-pass-but-constraint-fail gap in SWE-Gate [[swe-gate-passing-functional-tests-is-not-enough-for-software-engineering-agents-64021298]] overlap with or compound the public-vs-private overestimation gap in [[saving-swe-bench-a-benchmark-mutation-approach-for-realistic-agent-evaluation-0404d7de]]?
+- [ ] The v2.1.263 fix for background subagents being unable to reply to unnamed sibling/parent agents [[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]] implies prior fan-out teams could silently drop inter-agent messages — were any published parallel-subagent results run on an affected build?
+- [ ] Does PTA-IRT's privileged trajectory information [[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]] remain valid when trajectories come from a different base model or harness than the agent under evaluation?
 
 ## See also
 
