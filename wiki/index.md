@@ -1238,6 +1238,14 @@ This file is **LLM-write, human-read**. Do not hand-edit; routines maintain it.
 - [[postal-ai-controversy-sparks-shutdown-of-goonswarm-games-a9ad1f81]]
 - [[the-blood-of-dawnwalker-is-using-gen-ai-in-development-but-final-game-wont-have-any-ai-7165c94f]]
 - [[onimusha-way-of-the-sword-review-312383ae]]
+- [[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]]
+- [[swe-gate-passing-functional-tests-is-not-enough-for-software-engineering-agents-64021298]]
+- [[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]]
+- [[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]
+- [[announcing-automationbench-aa-83abdc0a]]
+- [[cyberpunk-2077-phantom-liberty-has-sold-over-15-million-copies-worldwide-in-less-than-three-years-f2cb7001]]
+- [[frontier-announces-collaboration-with-disney-for-new-video-game-15b94df3]]
+- [[nintendo-reveals-what-to-expect-from-the-zelda-40th-anniversary-direct-2f7724c1]]
 
 ## Reports
 
@@ -1332,4 +1340,5 @@ This file is **LLM-write, human-read**. Do not hand-edit; routines maintain it.
 - [[2026-08-27]]
 - [[2026-09-04]]
 - [[2026-09-05]]
+- [[2026-09-08]]
 - [[2026-09-06]]

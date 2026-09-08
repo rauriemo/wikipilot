@@ -2454,3 +2454,27 @@ Austin Wintory GDC Side Quest interview: collaborative composing process and Dev
 ## [2026-09-06] daily | 5 topics, 5 sources, 12 pages
 
 Daily research complete. PRs #694–#698. Topics: agentic-coding (1 src), frontier-models (3 src), ai-in-game-dev (0 src), games-of-note (0 src), game-music (1 src).
+
+## [2026-09-08] daily | agentic-coding — 3 sources, 5 pages
+
+Claude Code v2.1.263 background-subagent messaging fix and mid-session auto-mode disable fix. SWE-Gate benchmark validity critique (functional tests ≠ SE quality). PTA-IRT trajectory-aware eval reducing eval cost 10×.
+
+## [2026-09-08] daily | game-music — 0 sources, 1 page
+
+Quiet day; sentinel entry only.
+
+## [2026-09-08] daily | frontier-models — 2 sources, 3 pages
+
+AA Intelligence Index v4.3: Claude Fable 5.1 and GPT-6 Astra tied at #1 (both 53) — first tie at the top since Fable 5.1 launched Sep 1. AutomationBench-AA replaces τ³-Banking at 5% weighting. Summary regenerated (summary-affecting).
+
+## [2026-09-08] daily | games-of-note — 3 sources, 4 pages
+
+Cyberpunk 2077: Phantom Liberty at 15M copies; Frontier × Disney CMS collaboration announced; Zelda 40th Anniversary Direct preview (Sep 8).
+
+## [2026-09-08] daily | ai-in-game-dev — 0 sources, 1 page
+
+Quiet day; sentinel entry only.
+
+## [2026-09-08] daily | 5 topics, 8 sources, 14 pages
+
+Daily research complete. PRs #701–#705. Topics: agentic-coding (3 src), frontier-models (2 src), games-of-note (3 src), game-music (0 src), ai-in-game-dev (0 src).
