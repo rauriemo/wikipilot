@@ -2,8 +2,8 @@
 title: "Claude Fable 5.1"
 kind: entity
 aliases: ["Fable 5.1", "fable-5.1", "Claude Fable 5.1"]
-sources: ["[[introducing-claude-fable-5-1-and-claude-mythos-5-1-e7232d52]]", "[[claude-fable-5-1-tops-the-artificial-analysis-intelligence-index-88ebeee8]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]"]
-last_updated: 2026-09-05
+sources: ["[[introducing-claude-fable-5-1-and-claude-mythos-5-1-e7232d52]]", "[[claude-fable-5-1-tops-the-artificial-analysis-intelligence-index-88ebeee8]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]", "[[announcing-automationbench-aa-83abdc0a]]"]
+last_updated: 2026-09-08
 last_verified: 2026-09-05
 freshness_window_days: 30
 ---
@@ -34,7 +34,11 @@ Claude Fable 5.1 is Anthropic's flagship Mythos-class model, shipped **September
 
 > On Intelligence Index v4.2, Claude Fable 5.1 (max with fallback) tops the leaderboard with a score of 57, followed by GPT-6 Astra (max) at 55, GPT-6 Astra (xhigh) at 54, Claude Opus 5 (max) at 54 and Claude Opus 5 (xhigh) at 53. [[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]
 
-_no contradictions or gaps known yet (last reviewed: 2026-09-05)_
+**AA Intelligence Index v4.3 (Sep 8, 2026) — Fable 5.1 tied with GPT-6 Astra at #1 (both 53).** On the v4.3 re-scale, Fable 5.1 (max with fallback) and GPT-6 Astra (max) both score **53** — the first index version where a non-Anthropic model ties the top position; Fable 5.1 leads on AA-Briefcase and SciCode while GPT-6 Astra leads on Terminal-Bench v4.0 and AutomationBench-AA [[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]. On AutomationBench-AA individually, **Fable 5 (max) leads the field at 48.6%**; Fable 5.1's individual score was not published in the v4.3 announcement [[announcing-automationbench-aa-83abdc0a]].
+
+> Both Claude Fable 5.1 (max with fallback) and GPT-6 Astra (max) score 53 on Intelligence Index v4.3, followed by Claude Opus 5 (max, 51). [[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]
+
+> Claude Fable 5 (max) leads at 48.6% [on AutomationBench-AA]. [[announcing-automationbench-aa-83abdc0a]]
 
 ## Disputes
 
@@ -42,6 +46,7 @@ _no contradictions or gaps known yet (last reviewed: 2026-09-05)_
 
 - [ ] Fable 5.1's GDPval-AA v2 lead over Opus 5 (1,853 vs 1,824) has overlapping confidence intervals [[claude-fable-5-1-tops-the-artificial-analysis-intelligence-index-88ebeee8]] — is the lead statistically meaningful?
 - [ ] Fable 5.1's SWE-bench Pro (contamination-resistant coding) score was not reported at launch — does it hold Fable 5's 80.0% long-horizon-coding lead?
+- [ ] Fable 5.1's individual AutomationBench-AA score was not published in the v4.3 announcement (only that GPT-6 Astra scores higher than Fable 5.1 on this eval, and Fable 5 max leads at 48.6%). [[announcing-automationbench-aa-83abdc0a]]
 
 ## See also
 
