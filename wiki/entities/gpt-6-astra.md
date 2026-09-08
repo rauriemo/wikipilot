@@ -2,9 +2,9 @@
 title: "GPT-6 Astra"
 kind: entity
 aliases: ["GPT 6 Astra", "gpt6-astra", "Astra", "OpenAI Astra"]
-sources: ["[[gpt-6-astra-a-new-generation-of-intelligence-039a4975]]", "[[benchmarking-gpt-6-astra-b4150b17]]", "[[openai-launches-astra-its-powerful-and-controversial-new-model-939b4e3d]]", "[[openai-astra-and-looped-transformers-beac0586]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]"]
-last_updated: 2026-09-05
-last_verified: 2026-09-05
+sources: ["[[gpt-6-astra-a-new-generation-of-intelligence-039a4975]]", "[[benchmarking-gpt-6-astra-b4150b17]]", "[[openai-launches-astra-its-powerful-and-controversial-new-model-939b4e3d]]", "[[openai-astra-and-looped-transformers-beac0586]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]", "[[announcing-automationbench-aa-83abdc0a]]"]
+last_updated: 2026-09-08
+last_verified: 2026-09-08
 freshness_window_days: 30
 ---
 
