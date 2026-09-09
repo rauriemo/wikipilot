@@ -16,6 +16,30 @@ This file is **LLM-write, human-read**. Do not hand-edit; routines maintain it.
 
 ---
 
+## [2026-09-09] daily | 5 topics, 13 sources, 18 pages
+
+frontier-models (PR #709, 0 sources, 1 page), agentic-coding (PR #710, 2 sources, 3 pages), ai-in-game-dev (PR #711, 2 sources, 3 pages), games-of-note (PR #712, 4 sources, 5 pages), game-music (PR #713, 5 sources, 6 pages). All 5 PRs auto-merged.
+
+## [2026-09-09] daily | frontier-models — 0 sources, 1 page
+
+No qualifying sources found; sentinel ### Updates 2026-09-09 entry added to keep the log contiguous. PR #709.
+
+## [2026-09-09] daily | agentic-coding — 2 sources, 3 pages
+
+SWE-Bench Pro Verified (reward-hacking + quality controls; arXiv 2609.08149) and Claude Code v2.1.263–266 (MCP SSE fallback, plugin-dir folder loading). 2 new disputes, 2 new OQs. PR #710.
+
+## [2026-09-09] daily | ai-in-game-dev — 2 sources, 3 pages
+
+Narrative-to-Scene Generation pipeline (arXiv 2509.04481, LLM-driven 2D tile-based PCG) and Steam AI Gaming Festival 2026 (third-party Steam curator event, Sept 7–28). 1 new OQ. PR #711.
+
+## [2026-09-09] daily | games-of-note — 4 sources, 5 pages
+
+Zelda 40th Anniversary Direct: OoT Switch 2 Nov 5 release, Zelda film Apr 30 2027, anniversary console Oct 29. Valheim 1.0 launch after 5 years EA with Deep North biome. 2 new OQs. PR #712.
+
+## [2026-09-09] daily | game-music — 5 sources, 6 pages
+
+Clair Obscur A Painted Symphony 2027 tour (O2, Radio City, Uber Arena, Avicii Arena); Derivière/Resonance Amalgamation Choir score; Undertale The Determination Symphony world tour (70+ shows); Wuchang Fallen Feathers Laced Records vinyl; VGL LA Sept 11–12. 4 new OQs. PR #713.
+
 ## [2026-09-08] manual | conflict-resolver — 0 rebased, 1 requeued, 0 lint-fixed, 0 failed
 
 pr#705 (claude/daily-2026-09-08/ai-in-game-dev) requeued: mergeable_state=clean, CI green; auto-merge enabled via MCP (gh --json GraphQL blocked in this env).

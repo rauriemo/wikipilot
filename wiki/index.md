@@ -835,6 +835,19 @@ This file is **LLM-write, human-read**. Do not hand-edit; routines maintain it.
 - [[playstation-state-of-play-september-2026-all-the-biggest-announcements-games-and-trailers-2059a7f2]]
 - [[supercell-s-acquisition-of-metacore-expected-to-close-this-month-be4585ae]]
 - [[cd-projekt-red-won-t-be-abandoning-physical-releases-199ad00a]]
+- [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]
+- [[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]
+- [[narrative-to-scene-generation-an-llm-driven-pipeline-for-2d-game-environments-f8f70bb6]]
+- [[steam-ai-gaming-festival-2026-lineup-raises-questions-160354d0]]
+- [[zelda-40th-anniversary-direct-every-announcement-and-trailer-64021e5d]]
+- [[ocarina-of-time-remake-sets-november-5-release-date-32611817]]
+- [[valheim-1-0-launches-after-5-years-in-early-access-29dd8d29]]
+- [[valheim-1-0-review-the-end-of-a-monumental-journey-and-the-start-of-a-thrilling-new-one-8f822725]]
+- [[clair-obscur-expedition-33-confirms-2027-orchestral-tour-dates-and-tickets-ef673bde]]
+- [[finding-sophia-s-voice-inside-olivier-deriviere-s-score-for-resonance-a-plague-tale-legacy-836adc9f]]
+- [[undertale-confirms-2026-orchestral-world-soundtrack-tour-7f8fef62]]
+- [[wuchang-fallen-feathers-vinyl-soundtrack-is-now-available-to-pre-order-ships-september-2026-cc94be3a]]
+- [[video-games-live-los-angeles-september-2026-1d198b8c]]
 
 ## Answers
 
@@ -1249,6 +1262,7 @@ This file is **LLM-write, human-read**. Do not hand-edit; routines maintain it.
 
 ## Reports
 
+- [[2026-09-09]]
 - [[2026-09-01]]
 - [[2026-08-31]]
 
