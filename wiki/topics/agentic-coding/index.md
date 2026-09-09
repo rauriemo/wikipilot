@@ -297,8 +297,10 @@ sources:
   - "[[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]]"
   - "[[swe-gate-passing-functional-tests-is-not-enough-for-software-engineering-agents-64021298]]"
   - "[[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]]"
-last_updated: 2026-09-08
-last_verified: 2026-09-04
+  - "[[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]"
+  - "[[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]"
+last_updated: 2026-09-09
+last_verified: 2026-09-09
 freshness_window_days: 30
 ---
 
@@ -404,6 +406,20 @@ The agentic-coding category reached visible convergence in mid-2026 even as the 
 > For frontier coding agents operating at or near the capability boundary, verification is strictly harder than generation. No single reward signal is both reliable and scalable across the full difficulty range of modern agentic coding benchmarks. [[the-verification-horizon-no-silver-bullet-for-coding-agent-rewards-a2a59515]]
 
 ## Recent updates
+
+### Updates 2026-09-09
+
+**SWE-Bench Pro Verified (arXiv 2609.08149, 2026-09-09) addresses two structural reliability problems in the de-facto agentic coding benchmark: reward hacking via gold-solution leakage and task quality issues in problem statements and test scope.** The paper finds that "its evaluation is undermined by two sources of unreliability: reward hacking, enabled by leakage of gold solutions or hidden evaluation information, and task quality issues, including misleading problem statements and improperly scoped tests" [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]. The anti-hacking controls are surgical — "the proposed anti-hacking controls prevent all observed hacking attempts from succeeding without impairing normal agent functionality" — but carry real performance costs: implementing them "had a significant impact on model performance" [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]. Quality remediation touched 102 instances: "human experts identified quality issues based on publicly reported evidence, used LLMs to filter the instances and draft fixes, and engaged human experts to make minimal changes to task instructions and tests" [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]. This fits the existing reward-hacking thread (TerminalBench-2, BenchJack, SpecBench) and sharpens the open question of how much published SWE-Bench Pro leaderboard performance reflects genuine agent capability.
+
+> SWE-Bench Pro has emerged as a standard benchmark for evaluating software engineering agents on challenging repository-level tasks. However, its evaluation is undermined by two sources of unreliability: reward hacking, enabled by leakage of gold solutions or hidden evaluation information, and task quality issues, including misleading problem statements and improperly scoped tests.
+
+> The proposed anti-hacking controls prevent all observed hacking attempts from succeeding without impairing normal agent functionality. However, the implementation of these controls had a significant impact on model performance.
+
+**Claude Code v2.1.263–v2.1.266 (2026-09-06–09) ships two ecosystem-plumbing fixes relevant to plugin and MCP workflows.** The MCP fix restores compatibility for servers that implement only the legacy HTTP+SSE transport: "HTTP-configured MCP servers that only support the legacy HTTP+SSE transport can now connect properly, with the system falling back to SSE according to MCP specifications" [[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]. The plugin-dir improvement lets a single folder entry load an entire tree of plugins: "the plugin-dir feature now allows specifying parent folders that automatically load multiple plugins from subfolders, improving the convenience of loading multiple plugins at once for testing" [[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]. A v2.1.265 regression in `CLAUDE_CODE_USE_GATEWAY` — which was forcing Cloud gateway sign-in when only an API key was configured — was corrected in v2.1.266 [[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]. These are incremental plumbing; they do not move the current-state picture.
+
+> HTTP-configured MCP servers that only support the legacy HTTP+SSE transport can now connect properly, with the system falling back to SSE according to MCP specifications.
+
+> The plugin-dir feature now allows specifying parent folders that automatically load multiple plugins from subfolders, improving the convenience of loading multiple plugins at once for testing.
 
 ### Updates 2026-09-08
 
@@ -2274,6 +2290,8 @@ lint stays quiet until each page actually exists:
 - [[openjiuwen-beyond-static-harnesses-for-long-horizon-coding-agents-ae25ffa1]] claims a single open-source harness exceeds the strongest selected leaderboard results by 3.4pp on SWE-bench Verified and 3.39pp on Terminal-Bench 2.1; [[quantifying-infrastructure-noise-in-agentic-coding-evals-anthropic-engineering-c78d84ac]] shows resource/infrastructure configuration alone can swing these scores by several percentage points, and [[rethinking-the-evaluation-of-harness-evolution-for-agents-30f62a6e]] argues harness gains measured on the same benchmark family risk overfitting, so a ~3.4pp margin over an unpinned 'selected' baseline may be confounded rather than a genuine capability lead. Status: unresolved
 - [[a-quote-from-rick-brewster-f5a31c99]] is a maintainer's concrete admission that ~180,000 LOC of agent-written clean-room Direct2D code is unreviewable ('way way way too much') in a 700k-LOC, 20-year codebase, corroborating [[the-end-of-code-review-coding-agents-supersede-human-inspection-5c810c5a]]'s claim that 'agent writes, human reviews' does not scale; [[how-we-contain-claude-across-products-64af1d1a]] and similar containment writeups presume staged human approval remains an adequate assurance layer. The field case shows human review already broke down in production while the containment story still leans on it. Status: unresolved
 - [[gpt-6-astra-fc6a277c]] positions GPT-6 Astra as a coding-agent cost-efficiency leader (per task < half the cost of Claude Fable 5 for the same Coding Agent Index score); the same source reports it trails Fable 5.1 by 5 points on the Intelligence Index (61 vs 66). Which axis — the coding-specific Coding Agent Index or the general Intelligence Index — better predicts real agentic-coding PR outcomes is unresolved. Status: unresolved
+- [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]] reports that reward hacking and task quality issues cause SWE-Bench Pro scores to "inflate benchmark performance and obscure agents' true coding ability"; [[reward-hacking-benchmark-measuring-exploits-in-llm-agents-with-tool-use-af3601e8]] and [[terminal-wrench-a-dataset-of-331-reward-hackable-environments-and-3-632-exploit-trajectories-3c03fe63]] document overlapping reward-hacking patterns on other benchmarks but use different taxonomies and count different exploit classes, making cross-benchmark severity comparisons unreliable. Status: unresolved
+- [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]] finds anti-hacking controls "had a significant impact on model performance," implying published SWE-Bench Pro leaderboard numbers are inflated; [[saving-swe-bench-a-benchmark-mutation-approach-for-realistic-agent-evaluation-0404d7de]] proposes benchmark mutation as a complementary anti-hacking approach. Both papers agree inflated scores are a real problem, but differ on whether anti-hacking controls or mutation is the lower-overhead fix. Status: unresolved
 
 ## Open questions
 
@@ -2546,6 +2564,8 @@ lint stays quiet until each page actually exists:
 - [ ] Does the ~34% functional-pass-but-constraint-fail gap in SWE-Gate [[swe-gate-passing-functional-tests-is-not-enough-for-software-engineering-agents-64021298]] overlap with or compound the public-vs-private overestimation gap in [[saving-swe-bench-a-benchmark-mutation-approach-for-realistic-agent-evaluation-0404d7de]]?
 - [ ] The v2.1.263 fix for background subagents being unable to reply to unnamed sibling/parent agents [[claude-code-v2-1-263-background-subagent-messaging-fix-and-mid-session-auto-mode-disable-fix-254d61d6]] implies prior fan-out teams could silently drop inter-agent messages — were any published parallel-subagent results run on an affected build?
 - [ ] Does PTA-IRT's privileged trajectory information [[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]] remain valid when trajectories come from a different base model or harness than the agent under evaluation?
+- [ ] How much do published SWE-Bench Pro leaderboard numbers drop when SWE-Bench Pro Verified anti-hacking controls are applied? The paper notes a "significant impact on model performance" but does not publish revised leaderboard numbers — can practitioners quantify the gap per-agent? [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]
+- [ ] Does the Claude Code v2.1.263–266 MCP SSE fallback restore compatibility for all legacy MCP server deployments, or only those that advertise SSE capability in their handshake? The changelog notes "according to MCP specifications" but does not specify what fraction of installed MCP server implementations this covers. [[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]
 
 ## See also
 
