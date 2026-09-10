@@ -1,8 +1,8 @@
 ---
 title: "GPT-5.6 Sol"
 kind: entity
-sources: ["[[gpt-5-6-frontier-intelligence-that-scales-with-your-ambition-e19fbb75]]", "[[gpt-5-6-benchmarks-across-intelligence-speed-and-cost-1b9cd635]]", "[[expanding-daybreak-as-the-cyber-defense-window-narrows-081601c2]]", "[[advancing-the-price-performance-frontier-with-gpt-5-6-dca7adc6]]", "[[benchmarking-gpt-6-astra-b4150b17]]"]
-last_updated: 2026-09-04
+sources: ["[[gpt-5-6-frontier-intelligence-that-scales-with-your-ambition-e19fbb75]]", "[[gpt-5-6-benchmarks-across-intelligence-speed-and-cost-1b9cd635]]", "[[expanding-daybreak-as-the-cyber-defense-window-narrows-081601c2]]", "[[advancing-the-price-performance-frontier-with-gpt-5-6-dca7adc6]]", "[[benchmarking-gpt-6-astra-b4150b17]]", "[[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]"]
+last_updated: 2026-09-10
 last_verified: 2026-08-23
 freshness_window_days: 30
 ---
@@ -22,6 +22,10 @@ On 2026-08-10 OpenAI introduced **GPT-5.6-Cyber**, a cyber-specialized variant *
 On 2026-08-21 OpenAI cut GPT-5.6 Sol's price by over 20% for at least three months: **$4/$20 per Mtoken** (down from the $5/$30 launch pricing), a 20% input and 33% output reduction, promotional through at least 2026-11-21 across the API and Codex credits (token-based USD usage only; legacy metering excluded) [[advancing-the-price-performance-frontier-with-gpt-5-6-dca7adc6]]. At the promo rate Sol's cost per Intelligence-Index task falls below the ~$1.04 measured at launch pricing, tightening its cost-efficiency standing against Grok 4.6 ($2/$6) and Claude Opus 5 ($5/$25).
 
 > GPT-5.6 Sol now costs $4 per million input tokens and $20 per million output tokens, a 20% reduction in input pricing and a 33% reduction in output pricing. GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026. [[advancing-the-price-performance-frontier-with-gpt-5-6-dca7adc6]]
+
+**Update (Artificial Analysis, 2026-09-09) — Sol is no longer the solo AA Coding Agent Index leader.** The Coding Agent Index has been rebased onto a composite of DeepSWE v1.1, Terminal-Bench v4.0 and SWE-Atlas-QnA, on which **GPT-6 Astra (Codex) and Claude Fable 5.1 (Claude Code) tie at 62**, with GPT-5.6 Sol fourth at **55** (behind Claude Opus 5 at 60) [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]. The prior '80' figure on this page is on the older Coding Agent Index scale and is **not like-for-like** with the current basis. Sol still edges Astra on DeepSWE (72% vs 68%) but trails it on Terminal-Bench v4.0 (37% vs 56%) and SWE-Atlas-QnA (54% vs 62%) [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]].
+
+> In Codex, GPT-6 Astra scores 62 in the Index, level with Claude Fable 5.1 in Claude Code (62) and ahead of Claude Opus 5 (60), GPT-5.6 Sol (55) and Muse Spark 1.3 in Muse Code (54). [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]
 
 ## Disputes
 
