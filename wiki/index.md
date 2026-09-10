@@ -1259,6 +1259,10 @@ This file is **LLM-write, human-read**. Do not hand-edit; routines maintain it.
 - [[cyberpunk-2077-phantom-liberty-has-sold-over-15-million-copies-worldwide-in-less-than-three-years-f2cb7001]]
 - [[frontier-announces-collaboration-with-disney-for-new-video-game-15b94df3]]
 - [[nintendo-reveals-what-to-expect-from-the-zelda-40th-anniversary-direct-2f7724c1]]
+- [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]
+- [[report-futurlab-makes-layoffs-without-informing-team-leads-03b50623]]
+- [[powerwash-simulator-execs-absurdly-tried-to-soften-the-blow-of-layoffs-by-referring-to-let-go-workers-as-the-leavers-8b6df0fb]]
+- [[blue-reflection-second-light-official-soundtrack-music-review-f2d1746e]]
 
 ## Reports
 
@@ -1354,5 +1358,6 @@ This file is **LLM-write, human-read**. Do not hand-edit; routines maintain it.
 - [[2026-08-27]]
 - [[2026-09-04]]
 - [[2026-09-05]]
+- [[2026-09-10]]
 - [[2026-09-08]]
 - [[2026-09-06]]

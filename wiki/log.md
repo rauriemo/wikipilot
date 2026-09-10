@@ -2502,3 +2502,27 @@ Quiet day; sentinel entry only.
 ## [2026-09-08] daily | 5 topics, 8 sources, 14 pages
 
 Daily research complete. PRs #701–#705. Topics: agentic-coding (3 src), frontier-models (2 src), games-of-note (3 src), game-music (0 src), ai-in-game-dev (0 src).
+
+## [2026-09-10] daily | agentic-coding — 0 sources, 1 page
+
+No new qualifying sources found today.
+
+## [2026-09-10] daily | ai-in-game-dev — 0 sources, 1 page
+
+Quiet day; sentinel entry only.
+
+## [2026-09-10] daily | games-of-note — 2 sources, 3 pages
+
+FuturLab layoffs (7 staff) after non-PowerWash project cancellation; "the leavers" communication controversy.
+
+## [2026-09-10] daily | game-music — 1 source, 2 pages
+
+RPGFan review: Blue Reflection: Second Light OST (Hayato Asano + Toshihiko Watanabe).
+
+## [2026-09-10] daily | frontier-models — 1 source, 6 pages
+
+GPT-6 Astra ties Fable 5.1 on AA Coding Agent Index (62-62, rebased); Sol fourth at 55. Summary regenerated.
+
+## [2026-09-10] daily | 5 topics, 4 sources, 13 pages
+
+Daily research complete. PRs #716–#720. Topics: agentic-coding (0 src), ai-in-game-dev (0 src), games-of-note (2 src), game-music (1 src), frontier-models (1 src).
