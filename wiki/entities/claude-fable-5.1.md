@@ -2,8 +2,8 @@
 title: "Claude Fable 5.1"
 kind: entity
 aliases: ["Fable 5.1", "fable-5.1", "Claude Fable 5.1"]
-sources: ["[[introducing-claude-fable-5-1-and-claude-mythos-5-1-e7232d52]]", "[[claude-fable-5-1-tops-the-artificial-analysis-intelligence-index-88ebeee8]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]", "[[announcing-automationbench-aa-83abdc0a]]"]
-last_updated: 2026-09-08
+sources: ["[[introducing-claude-fable-5-1-and-claude-mythos-5-1-e7232d52]]", "[[claude-fable-5-1-tops-the-artificial-analysis-intelligence-index-88ebeee8]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]", "[[announcing-automationbench-aa-83abdc0a]]", "[[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]"]
+last_updated: 2026-09-10
 last_verified: 2026-09-05
 freshness_window_days: 30
 ---
@@ -39,6 +39,10 @@ Claude Fable 5.1 is Anthropic's flagship Mythos-class model, shipped **September
 > Both Claude Fable 5.1 (max with fallback) and GPT-6 Astra (max) score 53 on Intelligence Index v4.3, followed by Claude Opus 5 (max, 51). [[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]
 
 > Claude Fable 5 (max) leads at 48.6% [on AutomationBench-AA]. [[announcing-automationbench-aa-83abdc0a]]
+
+**AA Coding Agent Index (Sep 9, 2026) — Fable 5.1 tied with GPT-6 Astra at #1 (both 62).** On the current AA Coding Agent Index (a composite of DeepSWE v1.1, Terminal-Bench v4.0 and SWE-Atlas-QnA), Claude Fable 5.1 in Claude Code scores **62**, tied with GPT-6 Astra in Codex (62) and ahead of Claude Opus 5 (60) [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]. GPT-6 Astra is the cost-per-task leader among the co-leaders: it matches Fable 5.1's score at ~60% of the cost per task, driven by lower token use ($7.09 per coding task at max effort vs Fable 5.1's higher cost) [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]].
+
+> In Codex, GPT-6 Astra scores 62 in the Index, level with Claude Fable 5.1 in Claude Code (62) and ahead of Claude Opus 5 (60), GPT-5.6 Sol (55) and Muse Spark 1.3 in Muse Code (54). [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]
 
 ## Disputes
 

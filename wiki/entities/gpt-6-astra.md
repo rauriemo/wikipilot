@@ -2,8 +2,8 @@
 title: "GPT-6 Astra"
 kind: entity
 aliases: ["GPT 6 Astra", "gpt6-astra", "Astra", "OpenAI Astra"]
-sources: ["[[gpt-6-astra-a-new-generation-of-intelligence-039a4975]]", "[[benchmarking-gpt-6-astra-b4150b17]]", "[[openai-launches-astra-its-powerful-and-controversial-new-model-939b4e3d]]", "[[openai-astra-and-looped-transformers-beac0586]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]", "[[announcing-automationbench-aa-83abdc0a]]"]
-last_updated: 2026-09-08
+sources: ["[[gpt-6-astra-a-new-generation-of-intelligence-039a4975]]", "[[benchmarking-gpt-6-astra-b4150b17]]", "[[openai-launches-astra-its-powerful-and-controversial-new-model-939b4e3d]]", "[[openai-astra-and-looped-transformers-beac0586]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[announcing-the-artificial-analysis-intelligence-index-v4-3-58c45fc2]]", "[[announcing-automationbench-aa-83abdc0a]]", "[[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]"]
+last_updated: 2026-09-10
 last_verified: 2026-09-08
 freshness_window_days: 30
 ---
@@ -29,6 +29,10 @@ GPT-6 Astra is OpenAI's next-generation flagship, launched **2026-09-03**. OpenA
 **AA Intelligence Index v4.2 (Sep 5, 2026) — GPT-6 Astra (max) rises to #2 at 55, above Claude Opus 5 (max, 54).** On the new v4.2 re-scale (not comparable to v4.1.1, which placed Astra at 61 tied with Sol), **GPT-6 Astra (max) scores 55** — #2 overall behind Claude Fable 5.1 (57, #1) and above Claude Opus 5 (max, 54, #4); the (xhigh) variant scores 54, tied with Opus 5 (max) [[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]. This is the first time an OpenAI model has placed above all Claude models (except the top-tier Fable 5.1) on an independent aggregate intelligence index.
 
 > On Intelligence Index v4.2, Claude Fable 5.1 (max with fallback) tops the leaderboard with a score of 57, followed by GPT-6 Astra (max) at 55, GPT-6 Astra (xhigh) at 54, Claude Opus 5 (max) at 54 and Claude Opus 5 (xhigh) at 53. [[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]
+
+On 2026-09-09 Artificial Analysis reported that **GPT-6 Astra now ties Claude Fable 5.1 in BOTH flagship indices, at lower cost** — not just the Intelligence Index (both 53 on v4.3) but also the AA **Coding Agent Index**, where GPT-6 Astra (in Codex) scores **62, level with Fable 5.1 in Claude Code (62)** and ahead of Claude Opus 5 (60), GPT-5.6 Sol (55) and Muse Spark 1.3 (54) [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]. Astra matches Fable 5.1 at ~40% of the cost per task on the Intelligence Index and ~60% on the Coding Agent Index, driven by the lowest token use of any agent in the index ($7.09 per coding task at max effort, ~40% below Fable 5.1 for the same score) — making it the cost-per-task leader among the co-leaders [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]. Astra's 7-point coding edge over GPT-5.6 Sol comes from Terminal-Bench v4.0 (56% vs 37%) and SWE-Atlas-QnA (62% vs 54%), but it trails Sol on DeepSWE (68% vs 72%) [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]].
+
+> GPT-6 Astra ties leadership with Claude Fable 5.1 in both of our flagship Indices, at lower cost. Astra equals Fable 5.1 in the Intelligence Index at ~40% of the cost, and in the Coding Agent Index at ~60% of the cost. [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]
 
 ## Disputes
 

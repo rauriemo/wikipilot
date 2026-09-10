@@ -1,8 +1,8 @@
 ---
 title: "Claude Opus 5"
 kind: entity
-sources: ["[[introducing-claude-opus-5-c34a3276]]", "[[meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing-7f7892b3]]", "[[anthropic-launches-claude-opus-5-its-fourth-model-in-two-months-and-it-tops-fable-5-on-most-benchmarks-7253a489]]", "[[opus-5-fable-5-level-intelligence-at-a-lower-cost-per-task-864f9aa5]]", "[[claude-opus-5-the-new-leader-in-agentic-knowledge-work-92cf92da]]", "[[launching-v4-1-1-of-the-artificial-analysis-intelligence-index-8f7aaf85]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[qwen3-8-max-0902-same-price-much-better-at-coding-and-office-work-still-behind-opus-5-528b2db1]]"]
-last_updated: 2026-09-05
+sources: ["[[introducing-claude-opus-5-c34a3276]]", "[[meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing-7f7892b3]]", "[[anthropic-launches-claude-opus-5-its-fourth-model-in-two-months-and-it-tops-fable-5-on-most-benchmarks-7253a489]]", "[[opus-5-fable-5-level-intelligence-at-a-lower-cost-per-task-864f9aa5]]", "[[claude-opus-5-the-new-leader-in-agentic-knowledge-work-92cf92da]]", "[[launching-v4-1-1-of-the-artificial-analysis-intelligence-index-8f7aaf85]]", "[[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]", "[[qwen3-8-max-0902-same-price-much-better-at-coding-and-office-work-still-behind-opus-5-528b2db1]]", "[[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]"]
+last_updated: 2026-09-10
 last_verified: 2026-09-05
 freshness_window_days: 30
 input_cost_per_mtoken: 5.00
@@ -51,6 +51,10 @@ Under the Artificial Analysis Intelligence Index **v4.1.1** patch (2026-08-06 â€
 > On Intelligence Index v4.2, Claude Fable 5.1 (max with fallback) tops the leaderboard with a score of 57, followed by GPT-6 Astra (max) at 55, GPT-6 Astra (xhigh) at 54, Claude Opus 5 (max) at 54 and Claude Opus 5 (xhigh) at 53. [[announcing-artificial-analysis-intelligence-index-v4-2-2ec73a97]]
 
 > Against Claude Opus 5, the 0902 update leads on three coding benchmarks (MLS-Bench-Lite, SWE-Atlas QnA, QwenSWEBench V2); Claude still leads on TerminalBench 3.0, DeepSWE 1.1, and the agent coordination benchmarks. [[qwen3-8-max-0902-same-price-much-better-at-coding-and-office-work-still-behind-opus-5-528b2db1]]
+
+**AA Coding Agent Index (Sep 9, 2026) â€” Opus 5 places third at 60, behind co-leaders Claude Fable 5.1 and GPT-6 Astra (both 62).** On the current AA Coding Agent Index (a composite of DeepSWE v1.1, Terminal-Bench v4.0 and SWE-Atlas-QnA), **Claude Opus 5 scores 60**, behind the tied leaders Claude Fable 5.1 (62, in Claude Code) and GPT-6 Astra (62, in Codex), and ahead of GPT-5.6 Sol (55) and Muse Spark 1.3 (54) [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]].
+
+> In Codex, GPT-6 Astra scores 62 in the Index, level with Claude Fable 5.1 in Claude Code (62) and ahead of Claude Opus 5 (60), GPT-5.6 Sol (55) and Muse Spark 1.3 in Muse Code (54). [[gpt-6-astra-ties-leadership-with-claude-fable-5-1-in-both-flagship-indices-at-lower-cost-30caef79]]
 
 ## Disputes
 
