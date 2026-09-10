@@ -299,7 +299,7 @@ sources:
   - "[[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]]"
   - "[[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]"
   - "[[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]"
-last_updated: 2026-09-09
+last_updated: 2026-09-10
 last_verified: 2026-09-09
 freshness_window_days: 30
 ---
@@ -406,6 +406,10 @@ The agentic-coding category reached visible convergence in mid-2026 even as the 
 > For frontier coding agents operating at or near the capability boundary, verification is strictly harder than generation. No single reward signal is both reliable and scalable across the full difficulty range of modern agentic coding benchmarks. [[the-verification-horizon-no-silver-bullet-for-coding-agent-rewards-a2a59515]]
 
 ## Recent updates
+
+### Updates 2026-09-10
+
+Daily sweep of the allowlist domains (anthropic.com, docs.anthropic.com, cursor.com, openai.com, arxiv.org, github.com, simonwillison.net, every.to) for material published 2026-09-09 to 2026-09-10 surfaced no new citable sources. The day's substantive items — SWE-Bench Pro Verified (arXiv 2609.08149) and Claude Code v2.1.263–266 — were already ingested in the prior run and logged under `### Updates 2026-09-09`. A Claude Code v2.1.267 build (2026-09-09) is referenced by release trackers, but no first-party changelog text could be retrieved to cite verbatim; it is filed under Open questions for the next run. No contradictions to existing claims were found. _no contradictions or gaps known yet (last reviewed: 2026-09-10)_
 
 ### Updates 2026-09-09
 
@@ -2566,6 +2570,7 @@ lint stays quiet until each page actually exists:
 - [ ] Does PTA-IRT's privileged trajectory information [[efficient-swe-agent-benchmarking-via-trajectory-aware-evaluation-65f5bdb8]] remain valid when trajectories come from a different base model or harness than the agent under evaluation?
 - [ ] How much do published SWE-Bench Pro leaderboard numbers drop when SWE-Bench Pro Verified anti-hacking controls are applied? The paper notes a "significant impact on model performance" but does not publish revised leaderboard numbers — can practitioners quantify the gap per-agent? [[swe-bench-pro-verified-a-reliable-benchmark-for-software-engineering-agents-88bc6eed]]
 - [ ] Does the Claude Code v2.1.263–266 MCP SSE fallback restore compatibility for all legacy MCP server deployments, or only those that advertise SSE capability in their handshake? The changelog notes "according to MCP specifications" but does not specify what fraction of installed MCP server implementations this covers. [[claude-code-v2-1-263-v2-1-266-plugin-dir-folder-loading-and-mcp-connection-fixes-cfee660a]]
+- [ ] What load-bearing changes (if any) did Claude Code v2.1.267 (2026-09-09) and any subsequent 2.1.26x build ship — specifically for parallel-subagent orchestration, prompt caching, or MCP — and are they material enough to move the current-state picture beyond the v2.1.263–266 plumbing fixes already logged?
 
 ## See also
 
